@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <h1>Hola, soy [Tu Nombre]</h1>
+        <p>Desarrollador Web & Diseñador Creativo</p>
+        <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="about-container">
+            <h2>Sobre Mí</h2>
+            <p>Soy un desarrollador apasionado por crear experiencias digitales únicas y funcionales. Con experiencia en diseño y desarrollo web, transformo ideas en productos digitales que marcan la diferencia.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Desarrollo Web</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Diseño UI/UX</h3>
+                    <p>Figma, Adobe XD, Sketch</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Databases</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects">
+        <h2>Proyectos</h2>
+        
+        <div class="projects-container">
+            <!-- Sidebar -->
+            <aside class="projects-sidebar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar proyectos...">
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Filtrar por categoría</h3>
+                    <ul class="filter-list">
+                        <li class="filter-item active" data-filter="all">Todos</li>
+                        <li class="filter-item" data-filter="web">Desarrollo Web</li>
+                        <li class="filter-item" data-filter="design">Diseño</li>
+                        <li class="filter-item" data-filter="mobile">Mobile</li>
+                        <li class="filter-item" data-filter="backend">Backend</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Projects Grid - Se llenará dinámicamente con JavaScript -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Los proyectos se cargarán desde JavaScript -->
+            </div>
+            
+            <!-- Controles de Paginación Vertical -->
+            <div class="pagination-controls">
+                <button class="pagination-btn" id="prevPage" title="Página anterior">
+                    ↑
+                </button>
+                <div class="pagination-info" id="pageInfo">1/1</div>
+                <button class="pagination-btn" id="nextPage" title="Página siguiente">
+                    ↓
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <h2>Contacto</h2>
+            <div id="successMessage" class="success-message">
+                ¡Mensaje enviado con éxito! Te contactaré pronto.
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Portfolio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
